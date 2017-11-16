@@ -1,4 +1,4 @@
-# aurelia-skeleton-navigation (typescript)
+# JP RSS Reader
 
 ## Running The App
 
@@ -114,7 +114,7 @@ To run the app under [Electron](http://electron.atom.io), follow these steps.
   ```shell
   npm install electron-packager -g
   ```
-  
+
 3. Run the command:
 
   ```shell
