@@ -1,0 +1,10 @@
+<template>
+    <require from="post"></require>
+    <section class="feed">
+        <ul class="list list-unstyled">
+            <li class="row" repeat.for="post of posts">
+                <feed as-element="compose" view-model.bind="post"></feed>
+            </li>
+        </ul>
+    </section>
+</template>
