@@ -1,12 +1,8 @@
 <template>
     <require from="feed"></require>
-    <section class="feeds">
-        <ul class="list list-unstyled">
-            <li class="row" repeat.for="feed of feeds">
-                <div class="col-sm-4">
-                    <feed as-element="compose" view-model.bind="feed"></feed>
-                </div>
-            </li>
-        </ul>
+    <section class="feeds row">
+        <div class="col-sm-4" repeat.for="feed of feeds">
+            <feed as-element="compose" view-model.bind="feed"></feed>
+        </div>
     </section>
 </template>

@@ -1,6 +1,7 @@
 <template>
     <require from="post"></require>
     <section class="feed">
+        <h2>${title}</h2>
         <ul class="list list-unstyled">
             <li class="row" repeat.for="post of posts">
                 <feed as-element="compose" view-model.bind="post"></feed>
