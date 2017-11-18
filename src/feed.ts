@@ -3,8 +3,6 @@ import 'fetch';
 import 'xml-js';
 import { xml2json } from 'xml-js';
 import { Post } from './post';
-import { post } from 'selenium-webdriver/http';
-import { truncate, truncateSync } from 'fs';
 
 export class Feed {
     public url: string;
@@ -16,7 +14,7 @@ export class Feed {
         this.http = new HttpClient();
         this.http.configure(config => {
             config
-                .useStandardConfiguration()
+                .useStandardConfiguration();
         });
 
         if (!!options) {
