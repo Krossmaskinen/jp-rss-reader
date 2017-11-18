@@ -5,11 +5,16 @@ export class FeedList {
     public feeds: Feed[] = [];
 
     constructor() {
-        let testfeed: Feed = new Feed({
+        let aureliaBlog: Feed = new Feed({
             url: 'http://blog.aurelia.io/rss/',
             title: 'Aurelia Blog'
         });
+        let zenHabits: Feed = new Feed({
+            url: 'http://feeds.feedburner.com/zenhabits',
+            title: 'Zen Habits'
+        });
 
-        this.feeds.push(testfeed);
+        this.feeds.push(zenHabits);
+        this.feeds.push(aureliaBlog);
     }
 }
